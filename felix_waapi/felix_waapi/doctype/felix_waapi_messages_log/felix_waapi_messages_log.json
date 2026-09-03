@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-10 15:13:34.970515",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "felix_waapi_id",
+  "to_number",
+  "from_number",
+  "message_body",
+  "message_type",
+  "status",
+  "ack",
+  "priority",
+  "created_on",
+  "reference_doctype",
+  "reference_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "felix_waapi_id",
+   "fieldtype": "Data",
+   "label": "felix_waapi ID"
+  },
+  {
+   "fieldname": "to_number",
+   "fieldtype": "Data",
+   "label": "To Number"
+  },
+  {
+   "fieldname": "from_number",
+   "fieldtype": "Data",
+   "label": "From Number"
+  },
+  {
+   "fieldname": "message_body",
+   "fieldtype": "Small Text",
+   "label": "Message Body"
+  },
+  {
+   "fieldname": "message_type",
+   "fieldtype": "Data",
+   "label": "Message Type"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "sent\nqueue\nunsent"
+  },
+  {
+   "fieldname": "ack",
+   "fieldtype": "Data",
+   "label": "Ack"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Int",
+   "label": "Priority"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "label": "Reference Document Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Reference Name",
+   "options": "reference_doctype"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-10 15:16:47.575301",
+ "modified_by": "Administrator",
+ "module": "felix_waapi",
+ "name": "felix_waapi Messages Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
